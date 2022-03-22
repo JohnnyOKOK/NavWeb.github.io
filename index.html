@@ -2,17 +2,18 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
     
     <base target="_blank">
     <title>NavWeb</title>
     <meta name="author" content="JohnnyOK">
     <meta name="description" content="只是想做一个适合自己的导航网页">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">
   
     <style>
       /*div的上下边距*/
-      div{margin:4px;border:0px;padding:0px;}
+      #two{margin:4px;border:0px;padding:0px;}
       /*和最底下的脚本配和作随机颜色*/
       #one{ background:red;}
        /*暂时没用*/
@@ -20,11 +21,11 @@
        /*定义导航按钮*/
       .w1{ width:90px; line-height:60px; background-color:#ffb7DD;
            /*圆角*/
-           border-radius:10px;
-           border-top-left-radius:10px;
+       /*   border-radius:10px; */
+         /*   border-top-left-radius:10px; */
            border-top-right-radius:10px;
            border-bottom-left-radius:10px;
-           border-bottom-right-radius:10px; 
+         /*   border-bottom-right-radius:10px; */
            /*居中和硬改块元素*/
            text-align: center; display:inline-block}
       /*定义超链a的样式*/
@@ -33,6 +34,48 @@
         text-shadow: .2rem 0rem .5rem red,-.2rem 0rem .5rem red,0rem .2rem .5rem red,0rem -.2rem .5rem red;} 
       /*超链文字去下划线*/
       a:hover{text-decoration:underline}
+       /*下拉的样式*/
+      .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    width:90px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
   </style>
   
 </head>
@@ -53,54 +96,85 @@ setInterval("document.all.aa.innerHTML=new Date().toLocaleString()",1000);
         <a href="https://www.baidu.com/" title="百度搜索">
           <img src="img/baidu-logo.png" style="width:100px" alt="百度搜索引擎"></a>
         <input name="wd" type="text">
-        <button type="submit" class="ssyq-anniu">度搜</button> </form>
+        <button type="submit">度搜</button> </form>
       <br>
       <!--Google=======================-->
       <form action="https://www.google.com/search">
-        <a href="https://www.google.com/" title="谷歌搜索"> <img src="img/google-logo.png" style="width:100px" alt="谷歌搜索引擎"></a>
-        <input name="q" type="text"> <button type="submit" class="ssyq-anniu">谷搜</button> </form>
+        <a href="https://www.google.com/" title="谷歌搜索"> <img src="img/google-logo.png" style="width:100px" alt="谷歌搜索"></a>
+        <input name="q" type="text"> <button type="submit">谷搜</button> </form>
       <br>
       <!--Bing=======================-->
-      <form action="https://cn.bing.com/search" accept-charset="UTF-8" onsubmit="document.charset='UTF-8'">
-        <a href="https://cn.bing.com/" title="Bing搜索"><img src="img/bing-logo.png" style="width:100px" alt="微软必应搜索"></a>
+      <form action="https://cn.bing.com/search">
+        <a href="https://cn.bing.com/" title="Bing搜索"><img src="img/bing-logo.png" style="width:100px" alt="必应搜索"></a>
         <input name="q" type="text"> <button type="submit">Bing搜</button> </form>
+      <br>
+      <!--BBBBB=======================-->
+      <form action="https://search.bilibili.com/all">
+        <a href="https://search.bilibili.com" title="Bili搜索"><img src="img/bili-logo.png" style="width:100px" alt="Bili搜索"></a>
+        <input name="keyword" type="text"> <button type="submit">Bili搜</button> </form>
+      <br>
+      <!--Youtube=======================-->
+      <form action="https://www.youtube.com/results">
+        <a href="https://www.youtube.com" title="YTB搜索"><img src="img/youtube-logo.png" style="width:100px" alt="YTB搜索"></a>
+        <input name="search_query" type="text"> <button type="submit">Ytb搜</button> </form>
+      
+      
     </div>
     <br>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://www.2345.com/?kcvnet">2345</a></span>
       <span class="w1"><a href="https://www.12345good.com/sousuoyinqing.shtml">全 搜</a></span>
-      <span class="w1"><a href="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">驴 搜</a></span>
+      <span class="w1"><a href="https://www.taobao.com">TB</a></span>
       <span class="w1"><a href="https://play.google.com">谷play</a></span>
     </div>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://pan.baidu.com/">度 盘</a></span>
       <span class="w1"><a href="https://msdn.itellyou.cn/">MSDN</a></span>
       <span class="w1"><a href="https://www.microsoft.com/">Microsoft</a></span>
       <span class="w1"><a href="https://cn.bing.com/visualsearch">Bing图</a></span>
     </div>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://www.speedtest.cn/">测速cn</a></span>
       <span class="w1"><a href="https://tool.lu/ip">IP</a></span> <span class="w1"><a href="https://www.apple.com/">Apple</a></span>
       <span class="w1"><a href="https://graph.baidu.com/pcpage/index?tpl_from=pc">度 图</a></span>
     </div>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://www.speedtest.net">测速INT</a></span>
       <span class="w1"><a href="https://apkpure.com/cn/">APK</a></span>
       <span class="w1"><a href="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三 星</a></span>
       <span class="w1"><a href="https://www.google.com/imghp?hl=zh-CN&amp;ogbl">谷 图</a></span>
     </div>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://outlook.live.com/mail">Outlook</a></span>
       <span class="w1"><a href="https://mail.163.com/">Mail163</a></span>
       <span class="w1"><a href="https://www.mydrivers.com/">快科技</a></span>
       <span class="w1"><a href="https://cn.blizzard.com/">暴雪cn</a></span>
     </div>
-    <div>
+    <div id="two">
       <span class="w1"><a href="https://www.amd.com/">AMD</a></span>
       <span class="w1"><a href="https://www.intel.com/">Intel</a></span>
       <span class="w1"><a href="https://www.nvidia.cn/">Nvidia</a></span>
-      <span class="w1"><a href="https://www.blizzard.com/zh-tw">暴雪T</a></span>
+            <span class="w1"><a href="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">驴 搜</a></span>
+
     </div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="https://translate.google.cn">谷译cn</a></button>
+  <div class="dropdown-content">
+    <a href="https://translate.google.com">谷译int</a>
+    <a href="https://www.bing.com/translator">Bing译</a>
+    <a href="https://fanyi.baidu.com">度译</a>
+  </div>
+</div>
+  
+  <div class="dropdown">
+  <button class="dropbtn"><a href="https://worldofwarcraft.com/en-us/">魔兽us</a></button>
+  <div class="dropdown-content">
+    <a href="https://www.blizzard.com/en-us">暴雪us</a>
+    <a href="https://www.blizzard.com/zh-tw">暴雪tw</a>
+    <a href="https://cn.blizzard.com/">暴雪cn</a>
+  </div>
+</div>
+  
 <script>
 			function getColor(){
 				var re="#";
