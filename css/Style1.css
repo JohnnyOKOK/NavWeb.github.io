@@ -1,27 +1,23 @@
-﻿body {
+body {
     background-color: #F5F5F5;
 }
-form img{width:100px;}
+
+form img {
+    width: 100px;
+}
 /*div的上下边距*/
 #two {
     margin: 4px;
     border: 0px;
     padding: 0px;
 }
-/*和最底下的脚本配和作随机颜色
-#one {
-    background: red;
-}*/
-/*暂时没用
-.box {
-    width: 100px;
-    border: 0px solid #999;
-    overflow: hidden;
-    float: left
-}*/
+
 
 /*定义导航按钮*/
-li{list-style:none;}
+li {
+    list-style: none;
+}
+
 .w1 {
     width: 90px;
     line-height: 60px;
@@ -46,12 +42,12 @@ a {
 }
     /*鼠标滑过超链文字加下划线*/
     a:hover {
-        text-decoration: underline;            
+        text-decoration: underline;
     }
 /*下拉的样式*/
 .dropbtn {
-    background-color: #4CAF50;？
-    color: white;
+    background-color: #4CAF50;
+    ？ color: white;
     width: 90px;
     line-height: 40px;
     font-size: 16px;
@@ -92,3 +88,14 @@ a {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+/*和最底下的脚本配和作随机颜色
+#one {
+    background: red;
+}*/
+/*暂时没用
+.box {
+    width: 100px;
+    border: 0px solid #999;
+    overflow: hidden;
+    float: left
+}*/
