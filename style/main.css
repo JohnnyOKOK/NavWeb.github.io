@@ -1,17 +1,42 @@
-body {
-    background-color: #F5F5F5;
+@font-face {
+    font-family: "GenJyuuGothicX-P-Bold";
+    font-weight: 100;
+    src: url("GenJyuuGothicX-P-Bold.ttf");
+    font-display: swap;
 }
 
+body {
+    color: rgb(16 16 16);
+    background-color: rgb(225 255 225);
+    font-weight: 550;
+    text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px;
+    font-family: "GenJyuuGothicX-P-Bold", "Hiragino Kaku Gothic ProN";
+    font-size: 17px;
+}
+
+h1 {
+    text-shadow: rgba(0, 0, 0, 0.179) 8px 2px 0px;
+    color: rgb(96 17 16);
+}
+.rili{
+    margin-top: -20px;
+    margin-left: 15px;
+}
 form img {
     width: 100px;
 }
+
+.xiala1 {
+    color: #9582ff;
+    width: 60px;
+}
+
 /*div的上下边距*/
 #two {
     margin: 4px;
     border: 0px;
     padding: 0px;
 }
-
 
 /*定义导航按钮*/
 li {
@@ -20,66 +45,87 @@ li {
 
 .w1 {
     width: 90px;
-    line-height: 60px;
-    background-color: #ffb7DD;
+    line-height: 40px;
+    /* border-radius: 8px solid black; */
+    background-color: #77d178;
     /*圆角*/
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    /*   border-radius:10px; */
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+    /* border-top-right-radius: 5px; */
+    border-radius: 10px;
     /*   border-top-left-radius:10px; */
-    /*   border-bottom-right-radius:10px; */
     /*居中和硬改块元素*/
     text-align: center;
-    display: inline-block
+    display: inline-block;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
 }
+
+.w2 {
+    margin-right: 8px;
+    line-height: 40px;
+    background-color: #ffffff;
+    /* text-shadow: .2rem 0rem .5rem rgb(0, 0, 0); */
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
+}
+
 /*定义超链a的样式*/
 a {
     text-decoration: none;
-    color: #ffffff;
-    font-family: "微软雅黑";
+    color: rgb(16 16 16);
+
     /*超链文字加阴影*/
-    text-shadow: .2rem 0rem .5rem red,-.2rem 0rem .5rem red,0rem .2rem .5rem red,0rem -.2rem .5rem red;
-}
-    /*鼠标滑过超链文字加下划线*/
-    a:hover {
-        text-decoration: underline;
-    }
-/*下拉的样式*/
-.dropbtn {
-    background-color: #4CAF50;
-    ？ color: white;
-    width: 90px;
-    line-height: 40px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* text-shadow: .2rem 0rem .5rem rgb(0, 0, 0), -.2rem 0rem .5rem red, 0rem .2rem .5rem red, 0rem -.2rem .5rem red; */
 }
 
+/*鼠标滑过超链文字加下划线*/
+a:hover {
+    text-decoration: underline;
+}
+
+/*下拉的样式*/
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 2px;
+}
+
+.dropbtn {
+    background-color: #ed2b2bde;
+    width: 90px;
+    line-height: 40px;
+    border: none;
+    font-family: "GenJyuuGothicX-P-Bold", "Hiragino Kaku Gothic ProN";
+    font-size: 17px;
+    font-weight: 550;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
+    ;
+    text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #56c770;
     min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
+.dropdown-content a:hover {
+    background-color: #00902e
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -88,14 +134,4 @@ a {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-/*和最底下的脚本配和作随机颜色
-#one {
-    background: red;
-}*/
-/*暂时没用
-.box {
-    width: 100px;
-    border: 0px solid #999;
-    overflow: hidden;
-    float: left
-}*/
+
