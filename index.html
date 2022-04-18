@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base target="_blank">
@@ -8,62 +9,79 @@
     <meta name="description" content="只是想做一个适合自己的导航网页">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
 
 
 </head>
+
 <body>
-    <h1>❤️爱西贴露❤️</h1>
+    <h1>❤️洛卡琴行 の 導航</h1>
     <!-- 加日期时间 -->
     <div>
         <div id="aa" style="float:left"></div>
         <script>
             setInterval("document.all.aa.innerHTML=new Date().toLocaleString()", 1000);
         </script>
-        <strong><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">--日历</a></strong>
+        <strong class="w1 rili"><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">--日历</a></strong>
     </div>
+    <!--BaiDu=======================-->
+    <form action="https://www.baidu.com/s">
+        <a href="https://www.baidu.com/" title="百度搜索">
+            <img src="img/baidu-logo.png" alt="百度搜索引擎">
+        </a>
+        <input name="wd" type="text">
+        <button type="submit">度搜</button>
+    </form>
+    <ul id="two">
 
-    <div>
-        <!--BaiDu=======================-->
-        <form action="https://www.baidu.com/s">
-            <a href="https://www.baidu.com/" title="百度搜索">
-                <img src="img/baidu-logo.png" alt="百度搜索引擎">
-            </a>
-            <input name="wd" type="text">
-            <button type="submit">度搜</button>
-        </form>
-        <br>
+
         <!--Google=======================-->
-        <form action="https://www.google.com/search">
-            <a href="https://www.google.com/" title="谷歌搜索"> <img src="img/google-logo.png" alt="谷歌搜索"></a>
-            <input name="q" type="text"> <button type="submit">谷搜</button>
-        </form>
-        <br>
+        <li class="w2">
+            <details>
+                <summary class="xiala1">谷歌</summary>
+                <form action="https://www.google.com/search">
+                    <a href="https://www.google.com/" title="谷歌搜索"> <img src="img/google-logo.png" alt="谷歌搜索"></a>
+                    <input name="q" type="text"> <button type="submit">谷搜</button>
+                </form>
+            </details>
+        </li>
         <!--Bing=======================-->
-        <form action="https://cn.bing.com/search">
-            <a href="https://cn.bing.com/" title="Bing搜索"><img src="img/bing-logo.png" alt="必应搜索"></a>
-            <input name="q" type="text"> <button type="submit">Bing搜</button>
-        </form>
-        <br>
-        <!--BBBBB=======================-->
-        <form action="https://search.bilibili.com/all">
-            <a href="https://search.bilibili.com" title="Bili搜索"><img src="img/bili-logo.png" alt="Bili搜索"></a>
-            <input name="keyword" type="text"> <button type="submit">Bili搜</button>
-        </form>
-        <br>
+        <li class="w2">
+            <details>
+                <summary class="xiala1">Bing</summary>
+                <form action="https://cn.bing.com/search">
+                    <a href="https://cn.bing.com/" title="Bing搜索"><img src="img/bing-logo.png" alt="必应搜索"></a>
+                    <input name="q" type="text"> <button type="submit">Bing搜</button>
+                </form>
+            </details>
+        </li>
+        <!--B站=======================-->
+        <li class="w2">
+            <details>
+                <summary class="xiala1">B站</summary>
+                <form action="https://search.bilibili.com/all">
+                    <a href="https://search.bilibili.com" title="Bili搜索"><img src="img/bili-logo.png" alt="Bili搜索"></a>
+                    <input name="keyword" type="text"> <button type="submit">Bili搜</button>
+                </form>
+            </details>
+        </li>
         <!--Youtube=======================-->
-        <form action="https://www.youtube.com/results">
-            <a href="https://www.youtube.com" title="YTB搜索"><img src="img/youtube-logo.png" alt="YTB搜索"></a>
-            <input name="search_query" type="text"> <button type="submit">Ytb搜</button>
-        </form>
+        <li class="w2">
+            <details>
+                <summary class="xiala1">YTB</summary>
+                <form action="https://www.youtube.com/results">
+                    <a href="https://www.youtube.com" title="YTB搜索"><img src="img/youtube-logo.png" alt="YTB搜索"></a>
+                    <input name="search_query" type="text"> <button type="submit">Ytb搜</button>
+                </form>
+            </details>
+        </li>
+    </ul>
 
-
-    </div>
     <br>
     <ul id="two">
         <li class="w1"><a href="https://www.2345.com/?kcvnet">2345</a></li>
         <li class="w1"><a href="https://www.12345good.com/sousuoyinqing.shtml">全 搜</a></li>
-        <li class="w1"><a href="https://www.taobao.com">TB</a></li>
+        <li class="w1"><a href="https://www.taobao.com">淘 宝</a></li>
         <li class="w1"><a href="https://play.google.com">谷play</a></li>
     </ul>
     <ul id="two">
@@ -73,15 +91,15 @@
         <li class="w1"><a href="https://alternativeto.net/">替 代</a></li>
     </ul>
     <ul id="two">
-        <li class="w1"><a href="https://www.speedtest.cn/">测速cn</a></li>
+        <li class="w1"><a href="https://www.speedtest.cn/">測速cn</a></li>
         <li class="w1"><a href="https://tool.lu/ip">IP</a></li>
-        <li class="w1"><a href="https://www.apple.com/">Apple</a></li>
-        <li class="w1"><a href="https://graph.baidu.com/pcpage/index?tpl_from=pc">xxx</a></li>
+        <li class="w1"><a href="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">驴 搜</a></li>
+        <li class="w1"><a href="https://www.station-drivers.com/">驱 动</a></li>
     </ul>
     <ul id="two">
-        <li class="w1"><a href="https://www.speedtest.net">测速INT</a></li>
+        <li class="w1"><a href="https://www.speedtest.net">測速INT</a></li>
         <li class="w1"><a href="https://apkpure.com/cn/">APK</a></li>
-        <li class="w1"><a href="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三 星</a></li>
+        <li class="w1"><a href="http://tools.liumingye.cn/">工 具</a></li>
         <li class="w1"><a href="https://www.google.com/imghp?hl=zh-CN&amp;ogbl">xxx</a></li>
     </ul>
     <ul id="two">
@@ -90,13 +108,7 @@
         <li class="w1"><a href="https://www.mydrivers.com/">快科技</a></li>
         <li class="w1"><a href="https://chrome.google.com/webstore/category/extensions?hl=zh">谷浏Play</a></li>
     </ul>
-    <ul id="two">
-        <li class="w1"><a href="https://www.amd.com/">xxx</a></li>
-        <li class="w1"><a href="http://tools.liumingye.cn/">工 具</a></li>
-        <li class="w1"><a href="https://www.station-drivers.com/">驱 动</a></li>
-        <li class="w1"><a href="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">驴 搜</a></li>
-
-    </ul>
+<!--下拉=======================-->
     <div class="dropdown">
         <button class="dropbtn"><a href="https://translate.google.cn">谷译cn</a></button>
         <div class="dropdown-content">
@@ -121,6 +133,9 @@
             <a href="https://www.amd.com/">AMD</a>
             <a href="https://www.intel.com/">Intel</a>
             <a href="https://www.nvidia.cn/">Nvidia</a>
+            <a href="https://www.apple.com/">Apple</a>
+            <a href="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三 星</a>
+
         </div>
     </div>
 
@@ -135,31 +150,20 @@
         </div>
     </div>
 
-    <!-- <script>
-         function getColor() {
-             var re = "#";
-             for (var i = 0; i < 3; i++) {
-                 var temp = Math.floor(256 * Math.random());
-                 temp = temp.toString(16);
-                 if (temp.length !== 2) {
-                     temp = "0" + temp;
-                 }
-                 re += temp;
-             }
-             return re;
-         }
-         var one = document.getElementById("one");
-         one.style.backgroundColor = getColor();
-     </script>-->
-
-    <p>😺<a href="http://192.168.1.1/">吉比特h2-2</a></p>
-    <p>CMCCAdmin   aDm8H%MdA</p>
+<!--其它=======================-->
+</br>
+</br>
+<details><summary>😺其他备忘</summary>
+    <p><a href="http://192.168.1.1/">吉比特h2-2</a></p>
+    <p>CMCCAdmin aDm8H%MdA</p>
     <p>user nsvw659s</p>
-
+</details>
     <p>待续……</p>
     <p>
-        GitHub项目--<a href="https://github.com/JohnnyOKOK/johnnyokok.github.io">Github.com/JohnnyOKOK/johnnyokok.github.io</a><br>
+        GitHub项目--<a
+            href="https://github.com/JohnnyOKOK/johnnyokok.github.io">Github.com/JohnnyOKOK/johnnyokok.github.io</a><br>
     </p>
     <p></p>
 </body>
+
 </html>
