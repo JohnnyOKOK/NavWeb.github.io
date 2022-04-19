@@ -44,7 +44,7 @@ li {
 }
 
 .w1 {
-    width: 90px;
+    width: 80px;
     line-height: 40px;
     /* border-radius: 8px solid black; */
     background-color: #77d178;
@@ -94,7 +94,7 @@ a:hover {
 
 .dropbtn {
     background-color: #ed2b2bde;
-    width: 90px;
+    width: 80px;
     line-height: 40px;
     border: none;
     font-family: "GenJyuuGothicX-P-Bold", "Hiragino Kaku Gothic ProN";
