@@ -1,27 +1,30 @@
-@font-face {
-    font-family: "GenJyuuGothicX-P-Bold";
+/* @font-face { 
+    font-family:;
     font-weight: 100;
-    src: url("GenJyuuGothicX-P-Bold.ttf");
+    src: url("hyzjy.ttc");
     font-display: swap;
-}
+}*/
 
 body {
     color: rgb(16 16 16);
     background-color: rgb(225 255 225);
-    font-weight: 550;
-    text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px;
-    font-family: "GenJyuuGothicX-P-Bold", "Hiragino Kaku Gothic ProN";
-    font-size: 17px;
+    /* font-weight: 550; */
+    /* text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px; */
+    font-family: "微软雅黑 light";
+    /* font-size: 17px; */
 }
 
 h1 {
-    text-shadow: rgba(0, 0, 0, 0.179) 8px 2px 0px;
+    text-shadow: rgba(0, 0, 0, 0.140) 8px 2px 0px;
     color: rgb(96 17 16);
 }
-.rili{
+
+.rili {
     margin-top: -20px;
     margin-left: 15px;
+    max-height: 35px;
 }
+
 form img {
     width: 100px;
 }
@@ -52,12 +55,12 @@ li {
     /* border-bottom-left-radius: 10px; */
     /* border-bottom-right-radius: 10px; */
     /* border-top-right-radius: 5px; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /*   border-top-left-radius:10px; */
     /*居中和硬改块元素*/
     text-align: center;
     display: inline-block;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
+    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
 }
 
 .w2 {
@@ -68,7 +71,7 @@ li {
     text-align: center;
     display: inline-block;
     border-radius: 2px;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
+    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
 }
 
 /*定义超链a的样式*/
@@ -82,29 +85,36 @@ a {
 
 /*鼠标滑过超链文字加下划线*/
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: rgb(255, 4, 4);
 }
 
 /*下拉的样式*/
+#three {
+    margin-top: 0px;
+    margin-left: -38.5px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 
 .dropbtn {
-    background-color: #ed2b2bde;
-    width: 84px;
-    line-height: 40px;
+    /* background-color: #ed2b2bde; */
+    /* width: 84px; */
+    line-height: 35px;
     border: none;
-    font-family: "GenJyuuGothicX-P-Bold", "Hiragino Kaku Gothic ProN";
-    font-size: 17px;
-    font-weight: 550;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset;
+    /* color: rgb(16 16 16); */
+    /* font-family: "hyzjy.ttc"; */
+    /* font-size: 17px; */
+    /* font-weight: 550; */
+    /* cursor: pointer; */
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
     ;
-    text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px;
+    /* text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px; */
 }
 
 .dropdown-content {
@@ -113,11 +123,11 @@ a:hover {
     background-color: #56c770;
     min-width: 90px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .dropdown-content a {
-    color: black;
+    /* color: black; */
     padding: 6px 16px;
     text-decoration: none;
     display: block;
@@ -134,4 +144,3 @@ a:hover {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-
