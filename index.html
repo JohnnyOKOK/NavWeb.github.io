@@ -20,7 +20,7 @@
     <div>
         <div id="aa" style="float:left"></div>
         <script>
-            setInterval("document.all.aa.innerHTML=new Date().toLocaleString()", 1000);
+            setInterval("aa.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());",1000);
         </script>
         <strong class="w1 rili"><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">--日历</a></strong>
     </div>
