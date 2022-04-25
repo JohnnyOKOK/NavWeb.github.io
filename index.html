@@ -15,26 +15,36 @@
 </head>
 
 <body>
-    <h1>🏡洛卡楽器店 の 導航</h1>
+    <h1 class="h1">🏡洛卡楽器店 の 導航</h1>
     <!-- 加日期时间 -->
     <div>
-        <div id="aa" style="float:left"></div>
+        <div id="aa" style="float:left">loading</div>
         <script>
-            setInterval("aa.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+            setInterval("aa.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
         </script>
-        <strong class="w1 rili"><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">--日历</a></strong>
     </div>
-    
-   <div class="cleanslate w24tz-current-time w24tz-small"
-    style="display: inline-block !important; visibility: hidden !important; min-width:100px !important; min-height:50px !important;">
-    <p><a href="//24timezones.com/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B/%E6%97%B6%E9%97%B4" style="text-decoration: none"
-            class="clock24"
-            id="tz24-1650900498-cc15202-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2MjY2YmUxMjc5MDMzIiwidHlwZSI6ImRiIiwibGFuZyI6InpoIn0="
-            title="斯洛伐克 时钟" target="_blank" rel="nofollow">斯洛伐克</a></p>
-    <div id="clock_block_cb6266be1279033"></div>
-</div>
-<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
-    
+    <li class="rili">
+        <details>
+            <summary class="">word时间</summary>
+            <div>
+                <br>
+                <a href="https://24timezones.com/zh_time/slovakia_bratislava_clock.php" style="text-decoration: none"
+                    class="clock24"
+                    id="tz24-1650904477-cc15202-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMCIsInR5cGUiOiJkIiwibGFuZyI6InpoIn0="
+                    title="布拉迪斯拉发 实际时间" target="_blank" rel="nofollow">SK时间</a>
+                <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script>
+            </div>
+            <div>
+                <a href="https://24timezones.com/%E5%A4%9A%E4%BC%A6%E5%A4%9A/%E6%97%B6%E9%97%B4"
+                    style="text-decoration: none" class="clock24"
+                    id="tz24-1650904783-c1250-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMCIsInR5cGUiOiJkIiwibGFuZyI6InpoIn0="
+                    title="多伦多 实际时间" target="_blank" rel="nofollow">CA时间</a>
+                <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script>
+            </div>
+        </details>
+    </li>
+    <br>
+
     <!--BaiDu=======================-->
     <form action="https://www.baidu.com/s">
         <a href="https://www.baidu.com/" title="百度搜索">
@@ -90,8 +100,8 @@
 
     <br>
     <ul id="two">
-        <li class="w1"><a href="https://www.2345.com/?kcvnet">2345</a></li>
-        <li class="w1"><a href="https://www.12345good.com/sousuoyinqing.shtml">全 搜</a></li>
+        <li class="w1"><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</a></li>
+        <li class="w1"><a href="https://m.baidu.com/s?word=%E6%B1%87%E7%8E%87">汇率</a></li>
         <li class="w1"><a href="https://www.taobao.com">淘 宝</a></li>
         <li class="w1"><a href="https://play.google.com">谷play</a></li>
     </ul>
@@ -223,11 +233,22 @@
         </form>
     </details>
 
+    <br>
+    <!--Currency Converter widget by FreeCurrencyRates.com -->
+
+    <div id='gcw_mainFzUyITx6O' class='gcw_mainFzUyITx6O'></div>
+    <a id='gcw_siteFzUyITx6O' href='https://freecurrencyrates.com/zh-hans/'>FreeCurrencyRates.com</a>
+    <script>function reloadFzUyITx6O() { var sc = document.getElementById('scFzUyITx6O'); if (sc) sc.parentNode.removeChild(sc); sc = document.createElement('script'); sc.type = 'text/javascript'; sc.charset = 'UTF-8'; sc.async = true; sc.id = 'scFzUyITx6O'; sc.src = 'https://freecurrencyrates.com/zh-hans/widget-vertical?iso=USD-CNY-EUR-JPY-CAD-GBP-TWD-HKD-MMK&df=1&p=FzUyITx6O&v=fits&source=fcr&width=245&width_title=0&firstrowvalue=1&thm=eeeeee,ffffff,E3A1A1,CC0000,FFFFFF,eeeeee,ffffff,CC0000,000000&title=%E8%B4%A7%E5%B8%81%E6%8D%A2%E7%AE%97%E5%99%A8&tzo=-480'; var div = document.getElementById('gcw_mainFzUyITx6O'); div.parentNode.insertBefore(sc, div); } reloadFzUyITx6O(); </script>
+    <!-- put custom styles here: .gcw_mainFzUyITx6O{}, .gcw_headerFzUyITx6O{}, .gcw_ratesFzUyITx6O{}, .gcw_sourceFzUyITx6O{} -->
+    <!--End of Currency Converter widget by FreeCurrencyRates.com -->
     <li>待续……</li>
 
     <hr>
     <div>❤️‍🔥友情链接：<a href="https://h4bq8-12.pospal.cn/m#/categories">苏三家</a>→<a
             href="https://router.map.qq.com/short?l=7bd6e70dd338edf6fe177a2c1d364b92">地址</a></div>
+    <br>
+    <br>
+
 </body>
 
 </html>
