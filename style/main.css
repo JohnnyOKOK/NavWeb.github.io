@@ -1,147 +1,115 @@
-/* @font-face { 
-    font-family:;
-    font-weight: 100;
-    src: url("hyzjy.ttc");
-    font-display: swap;
-}*/
-
 body {
-    color: rgb(16 16 16);
-    background-color: rgb(225 255 225);
-    /* font-weight: 550; */
-    /* text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px; */
-    /* font-family: ""; */
-    /* font-size: 17px; */
+    background-color: #a5a5a5;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: #000000 1px 1px 4px, #000000 0px 0px 1px;
 }
 
-.h1 {
-    text-shadow: rgba(0, 0, 0, 0.140) 8px 2px 0px;
-    color: rgb(96 17 16);
+body,
+a {
+    color: rgb(243, 241, 241);
 }
 
-.rili {
-    color: rgb(96 17 16);
-    font-weight: 500;
-    border: 1px solid rgb(255, 255, 255);
-    width: 360px;
+/* *{
+border: #000000 solid 1px;
+} */
+.xiala1 {
+    width: 300px;
+    margin: 4px 0px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15%;
+    font-size: large;
 }
 
 form img {
-    width: 100px;
+    width: 80px;
+    vertical-align: text-bottom;
 }
 
-.xiala1 {
-    color: #9582ff;
-    width: 60px;
+summary img {
+    width: 20px;
+    vertical-align: text-bottom;
 }
 
-/*div的上下边距*/
-#two {
-    margin: 4px;
-    border: 0px;
-    padding: 0px;
+.world {
+    font-size: small;
 }
 
-/*定义导航按钮*/
+a {
+    text-decoration: none;
+}
+
 li {
     list-style: none;
 }
 
 .w1 {
-    width: 84px;
-    line-height: 40px;
-    /* border-radius: 8px solid black; */
-    background-color: #77d178;
-    /*圆角*/
-    /* border-bottom-left-radius: 10px; */
-    /* border-bottom-right-radius: 10px; */
-    /* border-top-right-radius: 5px; */
-    /* border-radius: 10px; */
-    /*   border-top-left-radius:10px; */
-    /*居中和硬改块元素*/
+    display: inline-block;
+    min-width: 6%;
+    vertical-align: top;
+}
+
+.w1 a {
+    display: block;
+    margin: 4px 0px;
+    height: 38px;
     text-align: center;
-    display: inline-block;
-    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
+    line-height: 38px;
+    padding: 0 4px 0 4px;
+
+
 }
 
-.w2 {
-    margin-right: 8px;
-    line-height: 40px;
-    background-color: #ffffff;
-    /* text-shadow: .2rem 0rem .5rem rgb(0, 0, 0); */
-    text-align: center;
-    display: inline-block;
-    border-radius: 2px;
-    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
-}
-
-/*定义超链a的样式*/
-a {
-    text-decoration: none;
-    color: rgb(16 16 16);
-
-    /*超链文字加阴影*/
-    /* text-shadow: .2rem 0rem .5rem rgb(0, 0, 0), -.2rem 0rem .5rem red, 0rem .2rem .5rem red, 0rem -.2rem .5rem red; */
-}
-
-/*鼠标滑过超链文字加下划线*/
-a:hover {
-    /* text-decoration: underline; */
-    color: rgb(255, 4, 4);
-}
-
-/*下拉的样式*/
-#three {
-    margin-top: 0px;
-    margin-left: -38.5px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    /* margin-left: 2px; */
-}
-
-.dropbtn {
-    /* background-color: #ed2b2bde; */
-    /* width: 84px; */
-    line-height: 35px;
-    border: none;
-    /* color: rgb(16 16 16); */
-    /* font-family: "hyzjy.ttc"; */
-    /* font-size: 17px; */
-    /* font-weight: 550; */
-    /* cursor: pointer; */
-    /* border-radius: 10px; */
-    /* box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2) inset; */
+.w1 a,
+.xiala2 {
+    background-color: #c1c1c154;
+    box-shadow: #00000096 2px 2px 3px 0px;
+    border-radius: 3%;
+    border-top: 1px #ffffffd3 solid;
+    border-left: 1px #ffffffd3 solid;
+    text-shadow: rgb(255, 255, 255) 0px 0px 2px, #000000 0px 0px 2px;
     ;
-    /* text-shadow: rgba(0, 0, 0, 0.140) 2px 2px 0px; */
+    color: rgb(255, 255, 255);
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #56c770;
-    min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
-    /* border-radius: 10px; */
+sub {
+    font-style: italic;
+    color: rgba(224, 224, 224, 0.629)
 }
 
-.dropdown-content a {
-    /* color: black; */
-    padding: 6px 16px;
-    text-decoration: none;
-    display: block;
+summary:hover,
+a:hover {
+    background-color: #81818154;
+    box-shadow: #00000096 2px 2px 3px 2px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 1px, 0px 0px 3px, 0px 0px 5px, 0px 0px 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    /* -webkit-transition: background-color .2s ease-in; */
+    /* -moz-transition: background-color .2s ease-in; */
+    /* transition:background-color .5s ease-in; */
+    transition: text-shadow .5s ease-in;
 }
 
-.dropdown-content a:hover {
-    background-color: #00902e
+h1:hover {
+    text-shadow: rgb(255, 255, 255) 0px 0px 1px, 0px 0px 3px, 0px 0px 5px, 0px 0px 20px, #000000 1px 1px 4px, #000000 0px 0px 1px;
+    transition: text-shadow .5s ease-in;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+#htmlcode1,
+.xunlei {
+    width: 1px;
+    height: 1px;
+    display: inline;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.huobi {
+    box-shadow: #00000096 2px 2px 3px 0px;
+    width: 230px;
+    height: 313px;
+    color: rgb(99, 52, 52) improtant;
+
 }
