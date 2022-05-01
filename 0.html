@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <base target="_blank">
+    <title>洛卡导航极速版</title>
+    <meta name="author" content="JohnnyOK">
+    <meta name="description" content="只是想做一个适合自己的导航网页">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <h1><mark color="red">洛卡楽器店 の 導航</mark></h1>
+    <!-- 加日期时间 -->
+    <div class="world">
+        <details title="点它会显示斯洛伐克与加拿大时间">
+            <summary>
+                <span id="aa">loading</span>
+                <script>
+                    setInterval("aa.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+                </script>
+                <u><strong>world时间</strong></u>
+                <strong><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</a></strong>
+            </summary>
+            <div>
+                <br>
+                <a href="https://24timezones.com/zh_time/slovakia_bratislava_clock.php" style="text-decoration: none"
+                    class="clock24"
+                    id="tz24-1650904477-cc15202-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMCIsInR5cGUiOiJkIiwibGFuZyI6InpoIn0="
+                    title="布拉迪斯拉发 实际时间" target="_blank" rel="nofollow">sk时间</a>
+                <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script>
+            </div>
+            <div>
+                <a href="https://24timezones.com/%E5%A4%9A%E4%BC%A6%E5%A4%9A/%E6%97%B6%E9%97%B4"
+                    style="text-decoration: none" class="clock24"
+                    id="tz24-1650904783-c1250-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIxIiwic2hvd3RpbWV6b25lIjoiMCIsInR5cGUiOiJkIiwibGFuZyI6InpoIn0="
+                    title="多伦多 实际时间" target="_blank" rel="nofollow">ca时间</a>
+                <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script>
+            </div>
+        </details>
+    </div>
+    <br>
+    <!--百度=======================-->
+    <form action="https://www.baidu.com/s">🟢百度搜
+        <input name="wd" type="text" placeholder="空搜 可直接进主页"><button type="submit">🔍</button>
+    </form>
+    <br>
+    <!--Google=======================-->
+    <form action="https://www.google.com/search">🎯谷歌搜
+        <input name="q" type="text"><button type="submit">🔍</button>
+    </form>
+    <br>
+    <!--Bing=======================-->
+    <form action="https://cn.bing.com/search">🔶必应搜
+        <input name="q" type="text"><button type="submit">🔍</button>
+    </form>
+    <br>
+    <!--B站=======================-->
+    <form action="https://search.bilibili.com/all">🔵B站搜
+        <input name="keyword" type="text"><button type="submit">🔍</button>
+    </form>
+    <br>
+    <!--Youtube=======================-->
+    <form action="https://www.youtube.com/results">🟥YTB搜
+        <input name="search_query" type="text"><button type="submit">🔍</button>
+    </form>
+    <br>
+
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>🏡常用主页</option>
+        <option title="公农历" value="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</option>
+        <option title="汇率换算" value="https://m.baidu.com/s?word=%E6%B1%87%E7%8E%87">汇率</option>
+        <option title="淘宝官网" value="https://www.taobao.com">淘宝</option>
+        <option title="百度网盘" value="https://pan.baidu.com/">百度网盘</option>
+        <option title="BT磁力链搜索下载" value="https://tellme.pw/btsow">磁力链搜索</option>
+        <option title="国内测网速" value="https://www.speedtest.cn/">国内测网速</option>
+        <option title="国际测网速" value="https://www.speedtest.net">国际测网速</option>
+        <option title="IP地址查询" value="https://tool.lu/ip">IP地址</option>
+        <option title="在线转换N多格式" value="https://convertio.co/zh/">在线转格式</option>
+    </select>
+
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>📬邮箱</option>
+        <option value="https://outlook.live.com/mail">微软邮箱</option>
+        <option value="https://mail.163.com/">网易邮箱</option>
+        <option value="https://mail.google.com/">谷歌邮箱</option>
+    </select>
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>🔠翻译</option>
+        <option title="国内谷歌翻译" value="https://translate.google.cn">谷译cn</option>
+        <option title="国外谷歌翻译" value="https://translate.google.com">谷译int</option>
+        <option title="微软翻译" value="https://www.bing.com/translator">Bing译</option>
+        <option title="百度翻译" value="https://fanyi.baidu.com">度译</option>
+    </SELECT>
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled value="#">🌐科技公司</option>
+        <option title="微软官网" value="https://www.microsoft.com/">Microsoft</option>
+        <option title="英特尔官网" value="https://www.intel.com/">Intel</option>
+        <option title="三星各国官网" value="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三星
+        </option>
+        <option title="苹果官网" value="https://www.apple.com/">Apple</option>
+        <option title="AMD Yes!" value="https://www.amd.com/">AMD</option>
+        <option title="英伟达官网" value="https://www.nvidia.cn/">Nvidia</option>
+    </SELECT>
+
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>📷图片出处搜索</option>
+        <option title="百度图片出处搜索" value="https://graph.baidu.com/pcpage/index?tpl_from=pc">百度识图</option>
+        <option title="谷歌图片出处搜索" value="https://www.google.com/imghp?hl=zh-CN&amp;ogbl">谷歌识图</option>
+        <option title="微软图片出处搜索" value="https://cn.bing.com/visualsearch">微软识图</option>
+        <option title="强大的图片出处搜索" value="https://tineye.com/">Tineye</option>
+
+    </SELECT>
+
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>🎮游戏</option>
+        <option title="红警二三下载" value="http://www.uc129.com/">红警</option>
+        <option title="在线游戏机1" value="https://www.yikm.net/">小霸王1</option>
+        <option title="在线游戏机2" value="https://www.yikm.net/">小霸王2</option>
+        <option title="FC智力游戏下载神站" value="http://dyzg.ysepan.com/">FC下载</option>
+        <option title="吞食天地2隐藏物品" value="https://www.9game.cn/news/5725716.html">吞2隐</option>
+        <option title="美服魔兽" value="https://worldofwarcraft.com/en-us/">魔兽us</option>
+        <option title="美服暴雪" value="https://www.blizzard.com/en-us">暴雪us</option>
+        <option title="台服魔兽" value="https://worldofwarcraft.com/zh-tw/">魔兽tw</option>
+        <option title="台服暴雪" value="https://www.blizzard.com/zh-tw">暴雪tw</option>
+        <option title="国服暴雪" value="https://cn.blizzard.com/">暴雪cn</option>
+    </SELECT>
+
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>🔻其它</option>
+        <option title="谷歌浏览器App商店" value="https://chrome.google.com/webstore/category/extensions?hl=zh">Chrome商店
+        </option>
+        <option title="强大的驱动下载站" value="https://www.station-drivers.com/">驱动下载</option>
+        <option title="谷歌官方安卓App商店" value="https://play.google.com">Google Play</option>
+        <option title="微软系统与应用原文件下载" value="https://msdn.itellyou.cn/">MSDN原版下载</option>
+        <option title="从谷歌商店直接下载安卓应用安装包" value="https://optionpkpure.com/cn/">安卓apk下载</option>
+        <option title="收费软件的替代方案查询" value="https://optionlternativeto.net/">替代</option>
+        <option title="一些工具" value="http://tools.liumingye.cn/">工具箱</option>
+        <option title="原‘驱动之家’" value="https://www.mydrivers.com/">快科技</option>
+
+    </SELECT>
+    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option disabled>❤️装机必备</option>
+        <option title="全网最绿色的解压缩工具" value="https://www.7-zip.org/">7z</option>
+        <option title="全网听、下歌神器" value="https://github.com/lyswhut/lx-music-desktop/">洛雪音乐</option>
+        <option title="洛雪音乐下载发布站点与密码" value="https://www.lanzoui.com/b0bf2cfa/">密码glqw</option>
+        <option title="全网听歌神器" value="https://listen1.github.io/listen1/">Listen1听音乐</option>
+        <option title="微软office安装神器" value="https://otp.landian.vip/zh-cn/">Office安装</option>
+        <option title="买家与卖家" value="https://wangwang.taobao.com/">阿里旺旺/千牛</option>
+        <option title="我也不想用它但没办法" value="https://www.xunlei.com/">迅雷下载</option>
+        <option title="你懂的" href="https://github.com/massgravel/Microsoft-Activation-Scripts/releases/tag/1.5">-
+            win、office激活</option>
+    </SELECT>
+
+</SELECT>
+<SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
+    <option disabled>🔧工具收录</option>
+    <option title="在线PS" value="https://ps.gaoding.com/">- 在线PhotoShop</option>
+    <option title="备用" value="https://www.aconvert.com/cn/">- 在线转格式-备用></option>
+    <option title="洛雪音乐下载发布站点与密码" value="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">- 驴 搜</option>
+    <option title="动漫图片搜索动漫出处" value="动漫图片搜索动漫出处" href="https://trace.moe/">- 漫图搜</option>
+    <option title="最全CPU排行" value="https://www.cpubenchmark.net/high_end_cpus.html">- CPU排行</option>
+    <option title="最全GPU排行" value="https://www.videocardbenchmark.net/high_end_gpus.html">- GPU排行</option>
+    
+</SELECT>
+
+
+    <!--其它=======================-->
+   
+    <br>
+    <details>
+        <summary class="xiala1">🔧装机必备</summary>
+
+        <li><a href="https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe">-
+                PotPlayer</a><sub>--复制链接后迅雷下载</sub>
+            <form class="xunlei" role="form" action="" method="post">
+                <input type="text" id="htmlcode1"
+                    value='https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe'>
+                <input name="button" type="button" onclick="htmlcode1.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+        </li>
+
+        <li><a href="http://get.daum.net/PotPlayer/Codec/OpenCodecSetup64.exe">-
+                PotPlayer额外编码器</a><sub>--复制链接后迅雷下载</sub>
+            <form class="xunlei" role="form" action="" method="post">
+                <input type="text" id="htmlcode1" value='http://get.daum.net/PotPlayer/Codec/OpenCodecSetup64.exe'>
+                <input name="button" type="button" onclick="htmlcode1.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+        </li>
+
+
+
+
+    </details>
+
+
+
+    <details>
+        <summary class="xiala1">🔧其他备忘</summary>
+        <li><a href="http://192.168.1.1/">① 192.168.1.1</a> &
+            <a href="http://192.168.31.1/">② 192.168.31.1</a>
+        </li>
+        <details>
+            <summary class="xiala1">个人备忘</summary>
+            <li><a href="http://192.168.1.1/">吉比特光猫h2-2</a></li>
+            超级管理员：
+            <form role="form" action="" method="post">
+                <input type="text" id="htmlcode" value='CMCCAdmin'>
+                <input name="button" type="button" onclick="htmlcode.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+
+            <form role="form" action="" method="post">
+                <input type="text" id="htmlcode" value='aDm8H%MdA'>
+                <input name="button" type="button" onclick="htmlcode.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+            一般管理员：
+            <form role="form" action="" method="post">
+                <input type="text" id="htmlcode" value='user'>
+                <input name="button" type="button" onclick="htmlcode.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+
+            <form role="form" action="" method="post">
+                <input type="text" id="htmlcode" value='nsvw659s'>
+                <input name="button" type="button" onclick="htmlcode.select();document.execCommand(&quot;Copy&quot;)"
+                    value="复制">
+            </form>
+        </details>
+        <li>GitHub代码--<a
+                href="https://github.com/JohnnyOKOK/johnnyokok.github.io">Github.com/JohnnyOKOK/johnnyokok.github.io</a>
+        </li>
+    </details>
+
+    <br>
+    <!--汇率货币计算=======================-->
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <!--Currency Converter widget by FreeCurrencyRates.com -->
+                    <div id='gcw_mainFQbe8BcLS' class='gcw_mainFQbe8BcLS'></div>
+                    <a id='gcw_siteFQbe8BcLS' href='https://freecurrencyrates.com/zh-hans/'>FreeCurrencyRates.com</a>
+                    <script>function reloadFQbe8BcLS() { var sc = document.getElementById('scFQbe8BcLS'); if (sc) sc.parentNode.removeChild(sc); sc = document.createElement('script'); sc.type = 'text/javascript'; sc.charset = 'UTF-8'; sc.async = true; sc.id = 'scFQbe8BcLS'; sc.src = 'https://freecurrencyrates.com/zh-hans/widget-vertical?iso=USD-EUR-CAD-XUL-GBP-JPY-HKD-TWD&df=1&p=FQbe8BcLS&v=fits&source=boc&width=245&width_title=0&firstrowvalue=1.07&thm=eeeeee,ffffff,E3A1A1,CC0000,FFFFFF,eeeeee,ffffff,CC0000,000000&title=%E8%B4%A7%E5%B8%81%E8%AE%A1%E7%AE%97%E5%99%A8&tzo=-480'; var div = document.getElementById('gcw_mainFQbe8BcLS'); div.parentNode.insertBefore(sc, div); } reloadFQbe8BcLS(); </script>
+                    <!-- put custom styles here: .gcw_mainFQbe8BcLS{}, .gcw_headerFQbe8BcLS{}, .gcw_ratesFQbe8BcLS{}, .gcw_sourceFQbe8BcLS{} -->
+                    <!--End of Currency Converter widget by FreeCurrencyRates.com -->
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <br>
+
+
+
+
+
+
+
+
+    本网站GitHub代码--<a
+        href="https://github.com/JohnnyOKOK/johnnyokok.github.io">Github.com/JohnnyOKOK/johnnyokok.github.io</a>
+    <hr>
+    <div>❤️‍🔥友情链接：<a href="https://h4bq8-12.pospal.cn/m#/categories">苏三家</a>→<a
+            href="https://router.map.qq.com/short?l=7bd6e70dd338edf6fe177a2c1d364b92">地址</a></div>
+    <br>
+
+</body>
+
+</html>
