@@ -4,16 +4,17 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base target="_blank">
-    <title>洛卡导航极速版</title>
+    <title>洛卡导航</title>
     <meta name="author" content="JohnnyOK">
     <meta name="description" content="只是想做一个适合自己的导航网页">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 
-<body>
-    <h1><mark color="red">洛卡楽器店 の 導航</mark></h1>
-    <!-- 加日期时间 -->
+<body background="img/19.jpg">
+    <h1 class="h1">洛卡楽器店 の 導航</h1>
+    <!-- 日期时间 -->
     <div class="world">
         <details title="点它会显示斯洛伐克与加拿大时间">
             <summary>
@@ -21,8 +22,7 @@
                 <script>
                     setInterval("aa.innerHTML=new Date().toLocaleString()+' 周'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
                 </script>
-                <u><strong>world时间</strong></u>
-                <strong><a href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</a></strong>
+                world时间
             </summary>
             <div>
                 <br>
@@ -41,140 +41,173 @@
             </div>
         </details>
     </div>
-    <br>
-    <!--百度=======================-->
-    <form action="https://www.baidu.com/s">🟢百度搜
-        <input name="wd" type="text" placeholder="空搜 可直接进主页"><button type="submit">🔍</button>
-    </form>
-    <br>
-    <!--Google=======================-->
-    <form action="https://www.google.com/search">🎯谷歌搜
-        <input name="q" type="text"><button type="submit">🔍</button>
-    </form>
-    <br>
-    <!--Bing=======================-->
-    <form action="https://cn.bing.com/search">🔶必应搜
-        <input name="q" type="text"><button type="submit">🔍</button>
-    </form>
-    <br>
-    <!--B站=======================-->
-    <form action="https://search.bilibili.com/all">🔵B站搜
-        <input name="keyword" type="text"><button type="submit">🔍</button>
-    </form>
-    <br>
-    <!--Youtube=======================-->
-    <form action="https://www.youtube.com/results">🟥YTB搜
-        <input name="search_query" type="text"><button type="submit">🔍</button>
-    </form>
+
+    </div>
+    <!--搜索=======================-->
+    <!--顶部BaiDu=======================-->
+    <div>
+        <form action="https://www.baidu.com/s">
+            <a href="https://www.baidu.com/" title="百度搜索">
+                <img src="img/baidu-logo.png" alt="百度搜索引擎">
+            </a>
+            <input name="wd" type="text" placeholder="">
+            <button type="submit">🔍</button>
+        </form>
+    </div>
     <br>
 
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected">🏡常用主页</option>
-        <option title="公农历" value="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</option>
-        <option title="汇率换算" value="https://m.baidu.com/s?word=%E6%B1%87%E7%8E%87">汇率</option>
-        <option title="淘宝官网" value="https://www.taobao.com">淘宝</option>
-        <option title="百度网盘" value="https://pan.baidu.com/">百度网盘</option>
-        <option title="BT磁力链搜索下载" value="https://tellme.pw/btsow">磁力链搜索</option>
-        <option title="国内测网速" value="https://www.speedtest.cn/">国内测网速</option>
-        <option title="国际测网速" value="https://www.speedtest.net">国际测网速</option>
-        <option title="IP地址查询" value="https://tool.lu/ip">IP地址</option>
-        <option title="在线转换N多格式" value="https://convertio.co/zh/">在线转格式</option>
-    </select>
+    <!--收缩式搜索=======================-->
+    <div class="">
+        <!--Google=======================-->
+        <li class="w1">
+            <details>
+                <summary class="xiala2" title="空搜索能直接打开主页"><img src="img/google-logo.png" alt="谷歌搜索">谷歌</summary>
+                <form action="https://www.google.com/search">
+                    <input name="q" type="text"> <button type="submit">🔍</button>
+                </form>
+            </details>
+        </li>
+        <!--Bing=======================-->
+        <li class="w1">
+            <details>
+                <summary class="xiala2" title="空搜索能直接打开主页"><img src="img/bing-logo.png" alt="必应搜索">Bing</summary>
+                <form action="https://cn.bing.com/search">
+                    <input name="q" type="text"> <button type="submit">🔍</button>
+                </form>
+            </details>
+        </li>
+        <!--B站=======================-->
+        <li class="w1">
+            <details>
+                <summary class="xiala2" title="空搜索能直接打开主页"><img src="img/bili-logo.png" alt="Bili搜索">B站</summary>
+                <form action="https://search.bilibili.com/all">
+                    <input name="keyword" type="text"> <button type="submit">🔍</button>
+                </form>
+            </details>
+        </li>
+        <!--Youtube=======================-->
+        <li class="w1">
+            <details>
+                <summary class="xiala2" title="空搜索能直接打开主页"><img src="img/youtube-logo.png" alt="YTB搜索">YTB</summary>
+                <form action="https://www.youtube.com/results">
+                    <input name="search_query" type="text"> <button type="submit">🔍</button>
+                </form>
+            </details>
+        </li>
+    </div>
 
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>📬邮箱</option>
-        <option value="https://outlook.live.com/mail">微软邮箱</option>
-        <option value="https://mail.163.com/">网易邮箱</option>
-        <option value="https://mail.google.com/">谷歌邮箱</option>
-    </select>
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>🔠翻译</option>
-        <option title="国内谷歌翻译" value="https://translate.google.cn">谷译cn</option>
-        <option title="国外谷歌翻译" value="https://translate.google.com">谷译int</option>
-        <option title="微软翻译" value="https://www.bing.com/translator">Bing译</option>
-        <option title="百度翻译" value="https://fanyi.baidu.com">度译</option>
-    </SELECT>
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled value="#">🌐科技公司</option>
-        <option title="微软官网" value="https://www.microsoft.com/">Microsoft</option>
-        <option title="英特尔官网" value="https://www.intel.com/">Intel</option>
-        <option title="三星各国官网" value="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三星
-        </option>
-        <option title="苹果官网" value="https://www.apple.com/">Apple</option>
-        <option title="AMD Yes!" value="https://www.amd.com/">AMD</option>
-        <option title="英伟达官网" value="https://www.nvidia.cn/">Nvidia</option>
-    </SELECT>
+    <br>
+    <!--导航按钮=======================-->
+    <div class="w1">
+        <a title="公农历" href="https://www.baidu.com/s?wd=%E6%97%A5%E5%8E%86">日历</a>
+        <a title="Outlook邮箱" href="https://outlook.live.com/mail">Outlook</a>
+        <a title="163邮箱" href="https://mail.163.com/">Mail163</a>
+        <a title="谷歌安卓应用商店" href="https://play.google.com">谷play</a>
+        <a title="谷歌浏览器扩展应用商店" href="https://chrome.google.com/webstore/category/extensions?hl=zh">谷浏Play</a>
+    </div>
+    <div class="w1">
+        <a title="汇率换算" href="https://m.baidu.com/s?word=%E6%B1%87%E7%8E%87">汇率</a>
+        <a title="百度网盘" href="https://pan.baidu.com/">度 盘</a>
+        <a title="微软系统与应用原文件下载" href="https://msdn.itellyou.cn/">MSDN</a></li>
+        <a title="BT磁力链搜索下载" href="https://tellme.pw/btsow">BtSow</a>
+        <a title="收费软件的替代方案查询" href="https://alternativeto.net/">替 代</a>
+    </div>
+    <div class="w1">
+        <a title="淘宝官网" href="https://www.taobao.com">淘 宝</a>
+        <a title="中国测网速" href="https://www.speedtest.cn/">测速cn</a>
+        <a title="IP地址查询" href="https://tool.lu/ip">IP</a>
+        <a title="一些工具" href="http://tools.liumingye.cn/">工 具</a>
+        <a title="原‘驱动之家’" href="https://www.mydrivers.com/">快科技</a>
 
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>📷图片出处搜索</option>
-        <option title="百度图片出处搜索" value="https://graph.baidu.com/pcpage/index?tpl_from=pc">百度识图</option>
-        <option title="谷歌图片出处搜索" value="https://www.google.com/imghp?hl=zh-CN&amp;ogbl">谷歌识图</option>
-        <option title="微软图片出处搜索" value="https://cn.bing.com/visualsearch">微软识图</option>
-        <option title="强大的图片出处搜索" value="https://tineye.com/">Tineye</option>
+    </div>
+    <div class="w1">
+        <a title="国内谷歌翻译" href="https://translate.google.cn">谷译cn</a>
 
-    </SELECT>
+        <a title="国际测网速" href="https://www.speedtest.net">测速int</a>
+        <a title="强大的驱动下载站" href="https://www.station-drivers.com/">驱 动</a>
+        <a title="从谷歌商店直接下载安卓应用安装包" href="https://apkpure.com/cn/">APK</a>
 
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>🎮游戏</option>
-        <option title="红警二三下载" value="http://www.uc129.com/">红警</option>
-        <option title="在线游戏机1" value="https://www.yikm.net/">小霸王1</option>
-        <option title="在线游戏机2" value="https://www.yikm.net/">小霸王2</option>
-        <option title="FC智力游戏下载神站" value="http://dyzg.ysepan.com/">FC下载</option>
-        <option title="吞食天地2隐藏物品" value="https://www.9game.cn/news/5725716.html">吞2隐</option>
-        <option title="美服魔兽" value="https://worldofwarcraft.com/en-us/">魔兽us</option>
-        <option title="美服暴雪" value="https://www.blizzard.com/en-us">暴雪us</option>
-        <option title="台服魔兽" value="https://worldofwarcraft.com/zh-tw/">魔兽tw</option>
-        <option title="台服暴雪" value="https://www.blizzard.com/zh-tw">暴雪tw</option>
-        <option title="国服暴雪" value="https://cn.blizzard.com/">暴雪cn</option>
-    </SELECT>
 
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>🔻其它</option>
-        <option title="谷歌浏览器App商店" value="https://chrome.google.com/webstore/category/extensions?hl=zh">Chrome商店
-        </option>
-        <option title="强大的驱动下载站" value="https://www.station-drivers.com/">驱动下载</option>
-        <option title="谷歌官方安卓App商店" value="https://play.google.com">Google Play</option>
-        <option title="微软系统与应用原文件下载" value="https://msdn.itellyou.cn/">MSDN原版下载</option>
-        <option title="从谷歌商店直接下载安卓应用安装包" value="https://optionpkpure.com/cn/">安卓apk下载</option>
-        <option title="收费软件的替代方案查询" value="https://optionlternativeto.net/">替代</option>
-        <option title="一些工具" value="http://tools.liumingye.cn/">工具箱</option>
-        <option title="原‘驱动之家’" value="https://www.mydrivers.com/">快科技</option>
+        <a title="在线转换N多格式" href="https://convertio.co/zh/">转格式</a>
+    </div>
 
-    </SELECT>
-    <SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-        <option selected="selected" disabled>❤️装机必备</option>
-        <option title="全网最绿色的解压缩工具" value="https://www.7-zip.org/">7z</option>
-        <option title="全网听、下歌神器" value="https://github.com/lyswhut/lx-music-desktop/">洛雪音乐</option>
-        <option title="洛雪音乐下载发布站点与密码" value="https://www.lanzoui.com/b0bf2cfa/">密码glqw</option>
-        <option title="全网听歌神器" value="https://listen1.github.io/listen1/">Listen1听音乐</option>
-        <option title="微软office安装神器" value="https://otp.landian.vip/zh-cn/">Office安装</option>
-        <option title="买家与卖家" value="https://wangwang.taobao.com/">阿里旺旺/千牛</option>
-        <option title="我也不想用它但没办法" value="https://www.xunlei.com/">迅雷下载</option>
-        <option title="你懂的" href="https://github.com/massgravel/Microsoft-Activation-Scripts/releases/tag/1.5">-
-            win、office激活</option>
-    </SELECT>
+    <!--下拉=======================-->
+    <details open>
+        <summary>🔧工具<sup>①</sup></summary>
+        <div>
+            <div class="w1">
+                <a title="国内谷歌翻译" href="https://translate.google.cn">谷译cn</a>
+                <a title="国外谷歌翻译" href="https://translate.google.com">谷译int</a>
+                <a title="微软翻译" href="https://www.bing.com/translator">Bing译</a>
+                <a title="百度翻译" href="https://fanyi.baidu.com">度译</a>
+            </div>
 
-</SELECT>
-<SELECT size="10" onchange="window.open(this.options[this.selectedIndex].value)">
-    <option selected="selected" disabled>🔧工具收录</option>
-    <option title="在线PS" value="https://ps.gaoding.com/">- 在线PhotoShop</option>
-    <option title="备用" value="https://www.aconvert.com/cn/">- 在线转格式-备用></option>
-    <option title="洛雪音乐下载发布站点与密码" value="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">- 驴 搜</option>
-    <option title="动漫图片搜索动漫出处" value="动漫图片搜索动漫出处" href="https://trace.moe/">- 漫图搜</option>
-    <option title="最全CPU排行" value="https://www.cpubenchmark.net/high_end_cpus.html">- CPU排行</option>
-    <option title="最全GPU排行" value="https://www.videocardbenchmark.net/high_end_gpus.html">- GPU排行</option>
-    
-</SELECT>
+            <div class="w1">
+                <a title="微软官网" href="https://www.microsoft.com/">Microsoft</a>
+                <a title="英特尔官网" href="https://www.intel.com/">Intel</a>
+                <a title="三星各国官网" href="https://www.samsung.com/cn/function/ipredirection/ipredirectionLocalList/">三
+                    星</a>
+            </div>
+
+            <div class="w1">
+                <a title="苹果官网" href="https://www.apple.com/">Apple</a>
+                <a title="AMD Yes!" href="https://www.amd.com/">AMD</a>
+                <a title="英伟达官网" href="https://www.nvidia.cn/">Nvidia</a>
+            </div>
+            <div class="w1">
+                <a title="百度图片出处搜索" href="https://graph.baidu.com/pcpage/index?tpl_from=pc">度 图</a>
+                <a title="谷歌图片出处搜索" href="https://www.google.com/imghp?hl=zh-CN&amp;ogbl">谷 图</a>
+                <a title="微软图片出处搜索" href="https://cn.bing.com/visualsearch">Bing图</a>
+                <a title="强大的图片出处搜索" href="https://tineye.com/">Tineye</a>
+
+            </div>
+        </div>
+    </details>
+
+    <details>
+        <summary>🎮游戏<sup>①</sup></summary>
+        <div>
+            <div class="w1">
+                <a title="红警二三下载" href="http://www.uc129.com/">红警</a>
+                <a title="在线游戏机1" href="https://www.yikm.net/">小霸王1</a>
+                <a title="在线游戏机2" href="https://www.yikm.net/">小霸王2</a>
+                <a title="FC智力游戏下载神站" href="http://dyzg.ysepan.com/">FC下载</a>
+                <a title="吞食天地2隐藏物品" href="https://www.9game.cn/news/5725716.html">吞2隐</a>
+
+            </div>
+
+            <div class="w1">
+                <a title="美服魔兽" href="https://worldofwarcraft.com/en-us/">魔兽us</a>
+                <a title="美服暴雪" href="https://www.blizzard.com/en-us">暴雪us</a>
+                <a title="台服魔兽" href="https://worldofwarcraft.com/zh-tw/">魔兽tw</a>
+                <a title="台服暴雪" href="https://www.blizzard.com/zh-tw">暴雪tw</a>
+                <a title="国服暴雪" href="https://cn.blizzard.com/">暴雪cn</a>
+            </div>
+
+            <div class="w1">
+
+            </div>
+            <div class="w1">
+
+            </div>
+        </div>
+    </details>
 
 
     <!--其它=======================-->
-   
-    <br>
+    </br>
+
     <details>
         <summary class="xiala1">🔧装机必备</summary>
-
+        <li><a href="https://www.7-zip.org/">- 7z</a></li>
+        <li><a title="全网听、下歌神器" href="https://github.com/lyswhut/lx-music-desktop/">- 洛雪音乐</a>&<a
+                href="https://www.lanzoui.com/b0bf2cfa/">发布</a>glqw</li>
+        <li><a title="全网听歌神器" href="https://listen1.github.io/listen1/">- Listen1听音乐</a></li>
+        <li><a href="https://otp.landian.vip/zh-cn/">- Office安装</a></li>
+        <li><a href="https://wangwang.taobao.com/">- 阿里旺旺/千牛</a></li>
+        <li><a href="https://www.xunlei.com/">- 迅雷下载</a></li>
         <li><a href="https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe">-
-                PotPlayer</a><sub>--复制链接后迅雷下载</sub>
+                PotPlayer<sub>--复制链接后迅雷下载</sub></a>
             <form class="xunlei" role="form" action="" method="post">
                 <input type="text" id="htmlcode1"
                     value='https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe'>
@@ -184,20 +217,30 @@
         </li>
 
         <li><a href="http://get.daum.net/PotPlayer/Codec/OpenCodecSetup64.exe">-
-                PotPlayer额外编码器</a><sub>--复制链接后迅雷下载</sub>
+                PotPlayer额外编码器<sub>--复制链接后迅雷下载</sub></a>
             <form class="xunlei" role="form" action="" method="post">
                 <input type="text" id="htmlcode1" value='http://get.daum.net/PotPlayer/Codec/OpenCodecSetup64.exe'>
                 <input name="button" type="button" onclick="htmlcode1.select();document.execCommand(&quot;Copy&quot;)"
                     value="复制">
             </form>
         </li>
-
+        <li><a title="你懂的" href="https://github.com/massgravel/Microsoft-Activation-Scripts/releases/tag/1.5">-
+                win、office激活</a></li>
 
 
 
     </details>
 
+    <details>
+        <summary class="xiala1">🔧工具收录</summary>
+        <li><a href="https://ps.gaoding.com/">- 在线PhotoShop</a></li>
+        <li><a href="https://www.aconvert.com/cn/">- 在线转格式-备用</a></li>
+        <li><a href="https://cse.google.com/cse?cx=006422944775554126616:gbrsbrjbfug">- 驴 搜</a></li>
+        <li><a title="动漫图片搜索动漫出处" href="https://trace.moe/">- 漫图搜</a></li>
+        <li><a title="最全CPU排行" href="https://www.cpubenchmark.net/high_end_cpus.html">- CPU排行</a></li>
+        <li><a title="最全GPU排行" href="https://www.videocardbenchmark.net/high_end_gpus.html">- GPU排行</a></li>
 
+    </details>
 
     <details>
         <summary class="xiala1">🔧其他备忘</summary>
@@ -242,7 +285,7 @@
     <table>
         <tr>
             <td>
-                <div>
+                <div class="huobi">
                     <!--Currency Converter widget by FreeCurrencyRates.com -->
                     <div id='gcw_mainFQbe8BcLS' class='gcw_mainFQbe8BcLS'></div>
                     <a id='gcw_siteFQbe8BcLS' href='https://freecurrencyrates.com/zh-hans/'>FreeCurrencyRates.com</a>
@@ -254,22 +297,13 @@
         </tr>
     </table>
 
-
-
     <br>
+    <li>待续……</li>
 
-
-
-
-
-
-
-
-    本网站GitHub代码--<a
-        href="https://github.com/JohnnyOKOK/johnnyokok.github.io">Github.com/JohnnyOKOK/johnnyokok.github.io</a>
     <hr>
     <div>❤️‍🔥友情链接：<a href="https://h4bq8-12.pospal.cn/m#/categories">苏三家</a>→<a
             href="https://router.map.qq.com/short?l=7bd6e70dd338edf6fe177a2c1d364b92">地址</a></div>
+    <br>
     <br>
 
 </body>
