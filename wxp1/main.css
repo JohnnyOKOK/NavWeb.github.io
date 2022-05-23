@@ -3,13 +3,24 @@
     position: fixed;
     left: 0;
     top: 0;
+    filter: drop-shadow(3px 3px 1px #3426266c);
+
 }
-
+.biaoti{
+    color: rgb(69, 69, 69);
+   margin-left: 30%;
+   text-shadow: #34262641 3px 3px 1px;
+   font-size: large;
+}
+}
 /* *{border:1px saddlebrown solid} */
-
+body{
+background-color: rgb(232, 232, 232);
+}
 #gimg1 {
-    width: 80px;
+    width: 95px;
     position: absolute;
+    margin-top: 48px;
 }
 
 #fimg1 {
@@ -21,7 +32,7 @@
 .waikuan {
     width: auto;
     height: 20px;
-    border: 1px rgb(255, 255, 255) solid;
+    border: 1px rgba(255, 255, 255, 0) dashed;
 }
 
 .waikuan:hover {
@@ -37,6 +48,7 @@
     height: 3px;
     box-shadow: 2px 2px 1px rgba(101, 101, 101, 0.264);
 }
+
 
 .zhongxian:hover,
 .xian:hover {

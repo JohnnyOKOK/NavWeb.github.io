@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.053875mm"
+   height="21mm"
+   viewBox="0 0 32.053835 21"
+   version="1.1"
+   id="svg4669"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="wholenote.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4671"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0359279"
+     inkscape:cx="-183.70002"
+     inkscape:cy="-17.927943"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4666" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path2818"
+       d="M 8.5168145,18.93189 C 4.1102649,17.771292 0.52736008,14.27273 0.39290281,10.999201 0.01233679,1.7337595 19.763038,-2.7502495 28.300121,4.6634139 37.531947,12.680403 23.421409,22.857451 8.5168145,18.93189 Z M 23.653984,14.814635 c 2.950416,-2.950416 0.07546,-11.7910542 -7.09535,-11.7910542 -7.6907201,0 -11.1550655,8.6773702 -8.010556,11.8218802 3.640208,3.640207 11.796705,3.278375 15.105906,-0.03083 z"
+       style="fill:#1a1a1a;stroke-width:0.7923"
+       sodipodi:nodetypes="sssscscc" />
+  </g>
+</svg>
