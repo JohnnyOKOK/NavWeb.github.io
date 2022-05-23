@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <base target="_blank">
+    <title>NavWeb</title>
+    <meta name="author" content="JohnnyOK">
+    <meta name="description" content="五线谱识谱">
+    <meta name="viewport" content="width=device-width, initial-scale=1.3, maximum-scale=1.3, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <img src="whole-note.png" id="image">
+
+<!-- G谱表区 -->
+<div>
+<div><img src="GClef.svg" id="gimg1"></div>
+<div class="waikuan"><div class="xian">   </div></div>
+<div class="wxp4j"></div>
+<div class="waikuan" id="_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="c2_start"></div>
+<div class="waikuan" id="b1_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="a1_start"></div>
+<div class="waikuan" id="g1_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="f1_start"></div>
+<div class="waikuan" id="e1_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="d1_start"></div>
+<div class="waikuan" id="c1_start"><div class="zhongxian"></div>   </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- F谱表区 -->
+<div>
+<div class="waikuan" id="c11_start"><div class="zhongxian"></div>   </div>
+<div><img src="fClef.svg" id="fimg1"></div>
+
+<div class="wxp4j" id="b_start"></div>
+<div class="waikuan" id="a_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="g_start"></div>
+<div class="waikuan" id="f_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="e_start"></div>
+<div class="waikuan" id="d_start"><div class="xian">   </div></div>
+<div class="wxp4j" id="c_start"></div>
+<div class="waikuan"><div class="xian">   </div></div>
+<div class="wxp4j"></div>
+<div class="waikuan"><div class="xian">   </div></div>
+</div>
+
+<!-- 唱名播放 -->
+<audio id="c1_player"> <source src="audio/c1.ogg"></source></audio>
+<audio id="d1_player"> <source src="audio/d1.ogg"></source></audio>
+<audio id="e1_player"> <source src="audio/e1.ogg"></source></audio>
+<audio id="f1_player"> <source src="audio/f1.ogg"></source></audio>
+<audio id="g1_player"> <source src="audio/g1.ogg"></source></audio>
+<audio id="a1_player"> <source src="audio/a1.ogg"></source></audio>
+<audio id="b1_player"> <source src="audio/b1.ogg"></source></audio>
+<audio id="c2_player"> <source src="audio/c2.ogg"></source></audio>
+<audio id="c11_player"> <source src="audio/c11.ogg"></source></audio>
+
+<audio id="b_player"> <source src="audio/b.ogg"></source></audio>
+<audio id="a_player"> <source src="audio/a.ogg"></source></audio>
+<audio id="g_player"> <source src="audio/g.ogg"></source></audio>
+<audio id="f_player"> <source src="audio/f.ogg"></source></audio>
+<audio id="e_player"> <source src="audio/e.ogg"></source></audio>
+<audio id="d_player"> <source src="audio/d.ogg"></source></audio>
+<audio id="c_player"> <source src="audio/c.ogg"></source></audio>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
+
+<!-- 唱名播放_js -->
+<script type="text/javascript">document.getElementById('c1_start').onclick = function(){c1_player.play();}</script>
+<script type="text/javascript">document.getElementById('d1_start').onclick = function(){d1_player.play();}</script>
+<script type="text/javascript">document.getElementById('e1_start').onclick = function(){e1_player.play();}</script>
+<script type="text/javascript">document.getElementById('f1_start').onclick = function(){f1_player.play();}</script>
+<script type="text/javascript">document.getElementById('g1_start').onclick = function(){g1_player.play();}</script>
+<script type="text/javascript">document.getElementById('a1_start').onclick = function(){a1_player.play();}</script>
+<script type="text/javascript">document.getElementById('b1_start').onclick = function(){b1_player.play();}</script>
+<script type="text/javascript">document.getElementById('c2_start').onclick = function(){c2_player.play();}</script>
+<script type="text/javascript">document.getElementById('c11_start').onclick = function(){c11_player.play();}</script>
+<script type="text/javascript">document.getElementById('b_start').onclick = function(){b_player.play();}</script>
+<script type="text/javascript">document.getElementById('a_start').onclick = function(){a_player.play();}</script>
+<script type="text/javascript">document.getElementById('g_start').onclick = function(){g_player.play();}</script>
+<script type="text/javascript">document.getElementById('f_start').onclick = function(){f_player.play();}</script>
+<script type="text/javascript">document.getElementById('e_start').onclick = function(){e_player.play();}</script>
+<script type="text/javascript">document.getElementById('d_start').onclick = function(){d_player.play();}</script>
+<script type="text/javascript">document.getElementById('c_start').onclick = function(){c_player.play();}</script>
+
+
+
+
+<!-- 音符跟随——js -->
+<script>
+    var img = document.getElementById("image");
+    document.onclick = function (event) {
+        targetX = event.clientX - img.offsetWidth / 2;
+        targetY = event.clientY - img.offsetHeight / 2;
+    };
+    var leaderX = 0, leaderY = 0, targetX = 0, targetY = 0;
+    setInterval(function () {
+        leaderX = leaderX + (targetX - leaderX) / 10;
+        leaderY = leaderY + (targetY - leaderY) / 10;
+        img.style.left = leaderX + "px";
+        img.style.top = leaderY + "px";
+    }, 10);
+</script>
 
