@@ -1,6 +1,6 @@
 #image {
     width: 50px;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
 }
